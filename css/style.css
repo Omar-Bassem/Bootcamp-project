@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("../pics/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 40px;
+    height: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 40px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+#task-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+#add-task-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(231, 224, 224);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.delete {
+    float: right;
+    color: white;
+    background-color: #4caf50;
+    cursor: pointer;
+    border-color: #4caf50;
+    border-radius: 5px;
+}
+
+#task-list {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    align-self: center;
+}
+
+#login {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #0056b3;
+}
+/* Show in Large desktops and laptops */
+@media (min-width: 1200px) {
+    body {
+        background-image: url('../pics/background.jpeg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
+
+/* Hide in Other Small Devices */
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-image: url("../pics/background.jpeg");
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-image: url("../pics/background.jpeg");
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    body {
+        background-image: url("../pics/mobilebg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: url("../pics/mobilebg.jpg");
+        background-position: top;
+        background-size: cover;
+
+    }
+}

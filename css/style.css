@@ -1,27 +1,59 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url("../pics/background.jpeg");
     background-size: cover;
     background-position: center;
     margin: 0;
     padding: 0;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#Welcome{
+    width: 700px;
+    height: 436px;
+}
+main h1{
+    font-size: 99px;
+    margin-right: 60px;
+    color: #366cbd;
+
+}
+#link{
+    background-color: #fba11a;
+    border: 0 #fba11a;
+    border-radius: 5px;
+    float: left;
+    margin-left: 200px;
+    height: 50px;
+    width: 100px;
+    color: white ;
+    font-size: 30px;
+}
+#link:hover{
+    background-color: #b47619;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #fba11a;
     padding: 20px 40px;
     height: 25px;
 }
-
+#logo{
+    width: 50px ;
+    height: 50px;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #fba11a;
     padding: 20px 40px;
 }
 
@@ -51,7 +83,7 @@ header {
 }
 
 #add-task-btn {
-    background-color: #4caf50;
+    background-color: #366cbd;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -60,7 +92,7 @@ header {
 }
 
 #add-task-btn:hover {
-    background-color: #3e8e41;
+    background-color: #5072e3;
     cursor: pointer;
 }
 
@@ -72,8 +104,8 @@ header {
 
 #task-list li {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
-    background-color: rgb(231, 224, 224);
+    border-bottom: 1px solid #ffffff;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 5px;
 }
@@ -84,21 +116,22 @@ header {
 
 #task-list li.completed {
     text-decoration: line-through;
-    color: #aaa;
+    color: #ffffff;
 }
 
 .delete {
     float: right;
     color: white;
-    background-color: #4caf50;
+    background-color: #366cbd;
+    border: 0;
+    border-radius: 2px;
     cursor: pointer;
-    border-color: #4caf50;
     border-radius: 5px;
 }
 
 #task-list {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     padding: 5px;
     width: 50%;
@@ -142,16 +175,47 @@ header {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #007bff;
+    background-color: #fba11a;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
 }
 
 #login:hover {
-    background-color: #0056b3;
+    background-color: #b47619;
 }
-/* Show in Large desktops and laptops */
+#message{
+    font-size: 10px;
+    margin-top: 2px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 100px; 
+    padding: 10px;
+}
+
+
+.grid-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: #555;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 90%;
+}
+
+.grid-item img {
+    height: 200px;
+    width: 200px;
+}
 @media (min-width: 1200px) {
     body {
         background-image: url('../pics/background.jpeg');
@@ -173,7 +237,7 @@ header {
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
     body {
-        background-image: url("../pics/background.jpeg");
+        /* background-image: url("../pics/background.jpeg"); */
         background-size: cover;
         background-position: top;
     }
@@ -182,7 +246,7 @@ header {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     body {
-        background-image: url("../pics/mobilebg.jpg");
+        /* background-image: url("../pics/mobilebg.jpg"); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -191,7 +255,7 @@ header {
 
 @media (max-width: 480px) {
     body {
-        background-image: url("../pics/mobilebg.jpg");
+        /* background-image: url("../pics/mobilebg.jpg"); */
         background-position: top;
         background-size: cover;
 

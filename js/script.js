@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function addTask(task) {
       if (task.trim() === "") return;
-  
       const li = document.createElement("li");
       li.textContent = task;
   
@@ -26,3 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
       todoList.appendChild(li);
     }
   });
+
+  function Password() {
+    const passwordElement = document.getElementById("password");
+    const messageElement = document.getElementById("message");
+    const password = passwordElement.value;
+    let message = ''
+    
+    if (password.length < 8) {
+      message = 'Password must be at least 8 characters long.';
+      messageElement.textContent = message;
+      messageElement.style.color = 'red'; 
+      return false; 
+      
+  }
+
+  }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -14,23 +15,17 @@
       <h2>Login</h2>
       <form action="Todo.html" method="post" onsubmit="return Password()">
         <div class="input-group">
-          <label>Username</label>
           <input
             type="text"
             id="username"
-            placeholder="Enter your username"
+            placeholder="Username"
             required
           />
         </div>
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter your password"
-            required
-          />
-          <div id="message" class="message"></div>
+          <div class="input-group" id="user-box">
+            <input type="password"  id="password" required="" placeholder="Password"/>
+            <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+            <div id="message" class="message"></div>
         </div>
         <button type="submit" id="login">Login</button>
       </form>
